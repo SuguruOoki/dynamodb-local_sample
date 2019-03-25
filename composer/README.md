@@ -14,3 +14,4 @@ php MoviesCreateTable.php
 aws-cliのインストールがうまくいったという前提ではあるが
 上記のコマンドで、Moviesというテーブルが作成される。
 なお、aws configure において入力する内容は、ダミーで良い。
+composerのインストールがされていない場合には、インストールを行うこと
