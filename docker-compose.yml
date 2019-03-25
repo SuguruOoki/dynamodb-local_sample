@@ -1,0 +1,21 @@
+version: '3'
+services:
+  dynamodb:
+      # image: instructure/dynamo-local-admin
+      build:
+        context: .
+        dockerfile: Dockerfile
+      ports:
+        - "8008:8000"
+      hostname: dynamodb
+      container_name: dynamodb
+      # networks:
+      #   [network_name]:
+      #     aliases:
+      #       - dynamodb-local
+      # extra_hosts:
+      #   - "[hosts_name]:[static ip address]"
+# networks:
+#   dynamodb_network:
+#     external:
+#       name: dynamodb_network
